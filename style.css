@@ -192,11 +192,22 @@ h1.hero-name {
 .navbar-nav .nav-link:hover {
     color: var(--accent) !important;
 }
+.img-fluid{
+border-radius: 10px;
+}
+.margin_container_ert {
+    margin-top: 150px;
+}
 .about-glass-box.stat-card{
 text-align: left;
 }
+.contact_us_ert .stat-card{
+text-align: left;
+}
 
-/* ABOUT BOX */
+.text_color_se{
+color: white !important;
+}
 .about-glass-box {
     background: rgba(255,255,255,0.03);
     border: 1px solid rgba(0, 210, 255, 0.2);
