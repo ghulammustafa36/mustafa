@@ -13,32 +13,37 @@
 
     <div id="particles-js"></div>
 
-  <nav class="navbar navbar-expand-lg fixed-top custom-nav">
-        <div class="container">
-            <a class="navbar-brand logo-text" href="#">Ghulam <span>Mustafa</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <i class="fa-solid fa-bars text-white"></i>
+<nav class="navbar navbar-expand-lg fixed-top custom-nav">
+    <div class="container d-flex justify-content-between align-items-center">
+        
+        <a class="navbar-brand logo-text" href="#">Ghulam <span>Mustafa</span></a>
+
+      
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <button class="close-drawer d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fa-solid fa-xmark text-white"></i>
             </button>
 
-            
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#tech-skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <!-- <a href="#contact" class="btn-nav d-none d-lg-block btn-neon-main">Hire Me</a> -->
-
-              <div class="text-center mt-4">
-                        <a href="#contact" class="btn-neon-main w-100">
-                            Hire Me <i class="fa-solid fa-paper-plane ms-2"></i>
-                        </a>
-              </div>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tech-skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
         </div>
-    </nav>
+          <div class="d-flex align-items-center">
+            <a href="#contact" class="btn-neon-main me-3 d-none d-sm-inline-block" >
+                Hire Me <i class="fa-solid fa-paper-plane ms-1"></i>
+            </a>
+
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fa-solid fa-bars-staggered text-white fs-2"></i>
+            </button>
+        </div>
+        
+    </div>
+</nav>
 
  <section class="hero" id="home">
     <div class="container">
@@ -138,63 +143,6 @@
         </div>
     </div>
 </section>
-
-
-    <!-- <section class="section-padding bg-darker" id="tech-skills">
-        <div class="container">
-            <h2 class="title text-center">Technical Arsenal</h2>
-            <div class="row g-4 mt-5">
-                <div class="col-md-4" data-aos="flip-left">
-                    <div class="skill-modern-card">
-                        <div class="icon-box"><i class="fa-brands fa-shopify"></i></div>
-                        <h4>Shopify & Liquid</h4>
-                        <p>Mastery of JSON schemas, Metafields, and Custom Sections.</p>
-                        <div class="skill-level"><div class="level-bar" style="width: 98%"></div></div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="flip-left" data-aos-delay="100">
-                    <div class="skill-modern-card">
-                        <div class="icon-box"><i class="fa-solid fa-code"></i></div>
-                        <h4>Frontend Dev</h4>
-                        <p>Advanced SCSS, JavaScript ES6+, and React integration.</p>
-                        <div class="skill-level"><div class="level-bar" style="width: 95%"></div></div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
-                    <div class="skill-modern-card">
-                        <div class="icon-box"><i class="fa-solid fa-gears"></i></div>
-                        <h4>Headless / API</h4>
-                        <p>Integrating Hydrogen, Oxygen, and external ERP/CRMs.</p>
-                        <div class="skill-level"><div class="level-bar" style="width: 85%"></div></div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="flip-left">
-                    <div class="skill-modern-card">
-                        <div class="icon-box"><i class="fa-solid fa-gauge-high"></i></div>
-                        <h4>Performance</h4>
-                        <p>Core Web Vitals optimization and script minification.</p>
-                        <div class="skill-level"><div class="level-bar" style="width: 97%"></div></div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="flip-left" data-aos-delay="100">
-                    <div class="skill-modern-card">
-                        <div class="icon-box"><i class="fa-solid fa-arrows-rotate"></i></div>
-                        <h4>Data Migration</h4>
-                        <p>Seamless transfer from Woo, Magento, and Wix.</p>
-                        <div class="skill-level"><div class="level-bar" style="width: 92%"></div></div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
-                    <div class="skill-modern-card">
-                        <div class="icon-box"><i class="fa-solid fa-cart-shopping"></i></div>
-                        <h4>CRO Strategy</h4>
-                        <p>User Behavior analysis and A/B testing implementation.</p>
-                        <div class="skill-level"><div class="level-bar" style="width: 90%"></div></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
 
 
@@ -316,7 +264,7 @@
         <div class="project-img-box">
             <img src="Knashi_Family_Drinks.jpg" alt="Store Image">
             <div class="project-actions">
-                <a href="https://knashi.com/" class="btn-project">View Live Project <i class="fa-solid fa-external-link"></i></a>
+                <a target="blank" href="https://knashi.com/" class="btn-project">View Live Project <i class="fa-solid fa-external-link"></i></a>
             </div>
         </div>
         <div class="project-info">
@@ -332,7 +280,7 @@
         <div class="project-img-box">
             <img src="Beige_Minimalist_Mother_s_Day_Sa.jpg" alt="Store Image">
             <div class="project-actions">
-                <a href="https://naturalsnapshots.com/" class="btn-project">View Live Project <i class="fa-solid fa-external-link"></i></a>
+                <a target="blank" href="https://naturalsnapshots.com/" class="btn-project">View Live Project <i class="fa-solid fa-external-link"></i></a>
             </div>
         </div>
         <div class="project-info">
@@ -343,37 +291,7 @@
     </div>
 </div>
 
-                <!-- <div class="col-md-6 mb-4" data-aos="fade-up">
-                    <div class="project-card">
-                        <div class="project-img-box">
-                            <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?q=80&w=800" alt="Work">
-                            <div class="project-actions">
-                                <a href="#" class="btn-project">View Live Project <i class="fa-solid fa-external-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <span class="text-accent">Speed Opt</span>
-                            <h4>Pure Aura Skincare</h4>
-                            <p>Optimization project: Increased speed score from 24 to 98.</p>
-                        </div>
-                    </div>
-                </div> -->
-                
-                <!-- <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-card">
-                        <div class="project-img-box">
-                            <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=800" alt="Work">
-                            <div class="project-actions">
-                                <a href="#" class="btn-project">View Live Project <i class="fa-solid fa-external-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <span class="text-accent">Brand Identity</span>
-                            <h4>Velvet & Vine</h4>
-                            <p>High-end fashion boutique with unique Liquid animations.</p>
-                        </div>
-                    </div>
-                </div> -->
+            
                 
             </div>
         </div>
@@ -433,34 +351,6 @@
         </div>
     </div>
  </section>
-<!--<section class="section-padding" id="specialization">
-    <div class="container">
-        <div class="plus-premium-box " data-aos="zoom-in">
-            <div class="row align-items-center">
-                <div class="col-lg-7">
-                    <div class="badge-plus mb-3"><i class="fa-solid fa-crown"></i> Enterprise Solutions</div>
-                    <h2 class="display-5 fw-bold text-white mb-4">Shopify <span class="text-accent">Plus</span> Specialist</h2>
-                    <p class="text-secondary mb-4">
-                        Engineered for high-volume brands requiring bespoke features and enterprise-grade customization. 
-                        I architect complex API integrations and automate workflows using exclusive Shopify Plus capabilities.
-                    </p>
-                    <div class="tags-container">
-                        <div class="modern-tag">Checkout Extensibility</div>
-                        <div class="modern-tag">B2B & Wholesale</div>
-                        <div class="modern-tag">Shopify Functions</div> <div class="modern-tag">Headless Oxygen</div>
-                    </div>
-                </div>
-                <div class="col-lg-5 text-center mt-5 mt-lg-0">
-                    <div class="floating-icon-box">
-                        <i class="fa-brands fa-shopify"></i>
-                        <div class="glow-ring"></div>
-                    </div>
-                    <a href="#contact" class="btn-neon-main mt-5">Scale Your Brand <i class="fa-solid fa-arrow-right-long ms-2"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
 
 <section class="section-padding" id="contact">
     <div class="container">
@@ -515,9 +405,7 @@
                         </div>
                     </a>
 
-                    <!-- LinkedIn -->
-                 <a href="https://www.linkedin.com/in/ghulam-mustafa-shopify-expert-17a8a2338/"
-   target="_blank"
+                <a target="blank" href="https://www.linkedin.com/in/ghulam-mustafa-shopify-expert-17a8a2338/"
    class="contact-box d-flex align-items-center text-decoration-none">
     <div class="icon-circle me-3">
         <i class="fa-brands fa-linkedin-in"></i>
@@ -526,7 +414,7 @@
         <small class="text-secondary text_color_se">LinkedIn</small>
         <p class="mb-0 color_white">linkedin.com/in/ghulam-mustafa</p>
     </div>
-</a>
+                </a>
 
                 </div>
             </div>
@@ -580,40 +468,7 @@
 
 </form>
                 
-                <!-- <form class="glass-card h-100" data-aos="fade-up">
-                    <div class="row custom_css">
-                        <div class="col-md-6 custom_width mb-4">
-                            <label class="form-label color_white text-secondary small text-uppercase fw-bold">
-                                Full Name
-                            </label>
-                            <input type="text" class="form-control cust-input"
-                                   placeholder="e.g. John Doe" required>
-                        </div>
-
-                        <div class="col-md-6 custom_width mb-4">
-                            <label class="form-label color_white text-secondary small text-uppercase fw-bold">
-                                Work Email
-                            </label>
-                            <input type="email" class="form-control cust-input"
-                                   placeholder="e.g. john@brand.com" required>
-                        </div>
-                    </div>
-
-                    <div class="mb-4">
-                        <label class="form-label color_white text-secondary small text-uppercase fw-bold">
-                            Project Details
-                        </label>
-                        <textarea class="form-control cust-input" rows="6"
-                                  placeholder="Briefly describe your Shopify requirements..."
-                                  required></textarea>
-                    </div>
-
-                    <div class="text-center mt-4">
-                        <button type="submit" class="btn-neon-main w-100">
-                            Send Inquiry <i class="fa-solid fa-paper-plane ms-2"></i>
-                        </button>
-                    </div>
-                </form> -->
+             
             </div>
 
         </div>
@@ -621,6 +476,22 @@
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.nav-link, .close-drawer');
+    const menuToggle = document.getElementById('navbarNav');
+    const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false});
+
+    navLinks.forEach((l) => {
+        l.addEventListener('click', () => { 
+            if (window.innerWidth < 992) {
+                bsCollapse.hide(); 
+            }
+        });
+    });
+});
+</script>
 
 <script>
 (function(){
@@ -685,4 +556,3 @@ form.addEventListener("submit", function(event) {
     </script>
 </body>
 </html>
-
