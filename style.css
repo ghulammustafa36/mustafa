@@ -26,7 +26,7 @@ transform: translateX(-50%);
 
 /* prevent overflow */
 .navbar{
-overflow: hidden;
+overflow: visible;
 }
 
 .btn-neon-main {
@@ -59,7 +59,19 @@ overflow: hidden;
 .btn-neon-main:hover::before {
     left: 0;
 }
-
+.contact_us_ert{
+display: flex !important;
+gap: 20px;
+}
+.custom_left_content{
+    width: 49%;
+}
+.custom_right_content{
+    width: 49%;
+}
+.col-md-5.mb-4.stat-card {
+    width: 100% !important;
+}
 .btn-neon-main:hover {
     color: #000;
     box-shadow: 0 0 30px var(--accent);
@@ -430,7 +442,8 @@ body {
   color: #a9b0bb;
 }
 .contact-box {
-  padding: 12px 14px;
+  padding: 12px 0px;
+  gap: 15px;
   border-radius: 12px;
   transition: all 0.3s ease;
 }
@@ -589,7 +602,7 @@ span.percentage-badge {
 /* CONTACT INPUTS */
 .cust-input { background: rgba(255,255,255,0.05) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: white !important; padding: 18px !important; margin-bottom: 15px; }
 .cust-input:focus { border-color: var(--accent) !important; box-shadow: 0 0 10px rgba(0,210,255,0.2); }
-.glass-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); padding: 50px; border-radius: 30px; backdrop-filter: blur(15px); }
+.glass-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 30px; backdrop-filter: blur(15px); }
 
 
 /* Add these to your existing style.css */
@@ -650,7 +663,9 @@ margin-right: 0 !important;
     font-size: 1.2rem;
     text-shadow: 0 0 10px var(--accent);
 }
-
+.p-4{
+    padding: 0 !important;
+}
 /* Ensure images cover the project frame nicely */
 .project-wrap img {
     height: 450px;
@@ -728,6 +743,20 @@ margin-right: 0 !important;
         padding: 65px 14px !important;
         transition: 0.4s ease-in-out;
     }
+    .navbar-collapse {
+    display: flex !important;
+    flex-direction: column !important;
+}
+.navbar-collapse {
+    position: fixed !important;
+    right: -100% !important;
+}
+.navbar-collapse.show {
+    right: 0 !important;
+}
+.navbar-collapse {
+    z-index: 9999 !important;
+}
     .hero-description {
     max-width: 100%;
     color: #ffffff;
@@ -768,6 +797,12 @@ font-size:14px;
     border-radius: 20px;
     text-align: center;
     transition: 0.4s;
+}
+.custom_left_content {
+    width: 100%;
+}
+.custom_right_content {
+    width: 100%;
 }
 .stat-card p {
     font-size: 14px;
