@@ -10,6 +10,25 @@ max-width: 1250px;
 h1.hero-name {
     font-size: 50px;
 }
+.header-flex{
+position: relative;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+/* Center button */
+.header-center{
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+}
+
+/* prevent overflow */
+.navbar{
+overflow: hidden;
+}
+
 .btn-neon-main {
     position: relative;
     padding: 12px 33px;
@@ -579,6 +598,9 @@ span.percentage-badge {
 .color_white{
 color: #ffffff !important;
 }
+.status-text{
+    margin-bottom:5px;
+}
 /* SKILL BARS */
 .skill-bar-wrapper { margin-bottom: 30px; }
 .skill-bar-wrapper span { font-weight: 700; font-size: 0.9rem; text-transform: uppercase; margin-bottom: 10px; display: inline-block; }
@@ -693,8 +715,7 @@ margin-right: 0 !important;
     margin-top: 0 !important;
 }
 
-/* Custom Sidebar Style for Mobile */
-@media (max-width: 991px) {
+@media (max-width: 768px) {
     .navbar-collapse {
         position: fixed;
         top: 0;
@@ -707,9 +728,53 @@ margin-right: 0 !important;
         padding: 65px 14px !important;
         transition: 0.4s ease-in-out;
     }
+    .hero-description {
+    max-width: 100%;
+    color: #ffffff;
+    font-size: 1.05rem;
+    border-left: 0;
+    padding-left: 0px;
+    margin-bottom: 40px;
+}
+    h1.hero-name {
+    font-size: 30px;
+    line-height: 50px;
+    margin-bottom: 0;
+    }
+    .hero-main-title {
+    font-size: 48px;
+    line-height: 53px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    }
     .navbar-collapse.show {
         right: 0;
     }
+    .header-center{
+left: 55%;
+}
+
+.btn-neon-main{
+padding:14px 20px;
+font-size:14px;
+}
+.col-md-5.aos-init.aos-animate {
+    margin-top: 40px;
+}
+.stat-card {
+    background: var(--glass);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.4s;
+}
+.stat-card p {
+    font-size: 14px;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
 button.close-drawer.d-lg-none {
     position: absolute;
     left: 22px;
@@ -728,9 +793,12 @@ button.close-drawer.d-lg-none {
         width: 100%;
         text-align: left;
     }
+    .p-4 {
+    padding: 20px 0px !important;
+}
 .fa-solid, .fas{
     font-weight: 600;
-    font-size:35px;
+    font-size:16px;
 }
 .cust-input {
     padding: 14px 12px !important;
@@ -745,6 +813,15 @@ button.close-drawer.d-lg-none {
     }
 .margin_container_ert {
     margin-top: 98px;
+}
+.contact-box {
+    padding: 12px 0px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    gap:15px;
+}
+.title {
+    line-height: 58px;
 }
     .nav-link {
         font-size: 18px !important;
