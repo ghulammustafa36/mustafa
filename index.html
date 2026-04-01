@@ -14,37 +14,68 @@
     <div id="particles-js"></div>
 
 <nav class="navbar navbar-expand-lg fixed-top custom-nav">
-    <div class="container d-flex justify-content-between align-items-center">
-        
-        <a class="navbar-brand logo-text" href="#">Ghulam <span>Mustafa</span></a>
+  <div class="container">
 
-      
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <button class="close-drawer d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <i class="fa-solid fa-xmark text-white"></i>
-            </button>
+    <!-- Logo -->
+    <a class="navbar-brand logo-text" href="#">
+      Ghulam <span>Mustafa</span>
+    </a>
 
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#tech-skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-        </div>
-          <div class="d-flex align-items-center">
-            <a href="#contact" class="btn-neon-main me-3 d-none d-sm-inline-block" >
-                Hire Me <i class="fa-solid fa-paper-plane ms-1"></i>
-            </a>
+    <!-- Drawer Button -->
+    <button class="navbar-toggler border-0 shadow-none"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav">
 
-            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <i class="fa-solid fa-bars-staggered text-white fs-2"></i>
-            </button>
-        </div>
-        
+      <i class="fa-solid fa-bars-staggered text-white fs-2"></i>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <button class="close-drawer d-lg-none"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav">
+
+        <i class="fa-solid fa-xmark text-white"></i>
+      </button>
+
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#tech-skills">Skills</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Portfolio</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+
+        <!-- Hire Me Button -->
+        <li class="nav-item hire-btn">
+          <a href="#contact" class="btn-neon-main">
+            Hire Me <i class="fa-solid fa-paper-plane ms-1"></i>
+          </a>
+        </li>
+
+      </ul>
+
     </div>
-</nav>
 
+  </div>
+</nav>
  <section class="hero" id="home">
     <div class="container">
         <div class="row align-items-center margin_container_ert">
@@ -361,7 +392,7 @@
 
         <div class="row align-items-stretch mt-5 contact_us_ert">
 
-            <!-- LEFT SIDE : CONTACT INFO -->
+           <div class="col-md-7">
             <div class="col-md-5 mb-4 stat-card">
                 <div class="h-100 p-4" data-aos="fade-right">
                     <h4 class="mb-3 color_white fw-bold">Let’s Connect</h4>
@@ -418,7 +449,7 @@
 
                 </div>
             </div>
-
+</div>
             <div class="col-md-7">
 
 <form id="contact-form" class="glass-card stat-card stat-card">
