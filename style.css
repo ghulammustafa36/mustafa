@@ -859,7 +859,8 @@ button.close-drawer.d-lg-none {
     gap:15px;
 }
 .title {
-    line-height: 58px;
+            line-height: 50px;
+        font-size: 43px;
 }
     .nav-link {
         font-size: 18px !important;
